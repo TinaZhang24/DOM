@@ -4,10 +4,11 @@
 // This is also where we define functions to modify the state.
 
 // TODO: Add support for more colors
-const colors = ["red", "green", "blue"];
-const sizes = ["small", "medium", "large"];
-const maxShapes = 10;
-const shapes = [
+const names= ["Alice", "Bob", "Carol"];
+const occupations = ["Writer", "Teacher", "Programmer"];
+const starting_price = ["$30", "$50", "$70"];
+const maxFreelancers = 1000;
+const freelancers = [
   {
     color: "red",
     size: "small",

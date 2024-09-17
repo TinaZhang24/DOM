@@ -10,6 +10,7 @@ const starting_prices = ["$30", "$50", "$70"];
 const freelancers = [];
 const maxFreelancers = 1000;
 
+// Here, we should do index +=1 , but not sure where to add the loop yet.
 function addFreelancer() {
   freelancers.push({
     name: names[0],
@@ -39,6 +40,16 @@ function render() {
   const $freelancerList = document.querySelector(".freelancers");
   $freelancerList.replaceChildren(...$freelancers);
 }
+
+function getAveragePrice(prices){
+  let sum_price = 0;
+  for(const price of prices){
+    sum_price += price;
+  }
+  return (sum_price / prices.length) 
+}
+
+// not sure where to add the above function yet.
 
 // === Script ===
 // Let's call the functions we defined in the state & render sections

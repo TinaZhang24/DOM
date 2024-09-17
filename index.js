@@ -6,22 +6,21 @@
 // TODO: Add support for more colors
 const names= ["Alice", "Bob", "Carol"];
 const occupations = ["Writer", "Teacher", "Programmer"];
-const starting_price = ["$30", "$50", "$70"];
+const starting_prices = ["$30", "$50", "$70"];
+const freelancers = [];
 const maxFreelancers = 1000;
-const freelancers = [
-  {
-    color: "red",
-    size: "small",
-  },
-  {
-    color: "yellow",
-    size: "small",
-  },
-];
 
-/** Adds a shape with random properties to the `shapes` array */
-function addShape() {
-  const color = colors[Math.floor(Math.random() * colors.length)];
+function addFreelancer() {
+  freelancers.push({
+    name: names[0],
+    occupation: occupations[0],
+    starting_price: starting_prices[0],
+  });
+}
+
+/** Adds a freelancer with ordered properties to the `freelancers` array */
+function addFreelancer() {
+
 
   // TODO: Randomize the size of the shape
   const size = "small";
